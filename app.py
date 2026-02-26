@@ -222,7 +222,7 @@ Be specific, clinically grounded, and academically rigorous. Focus on the Indian
                 client = Groq(api_key=api_key)
                 chat_completion = client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
-                    model="llama3-70b-8192",
+                    model="llama-3.3-70b-versatile",
                     temperature=0.7,
                     max_tokens=2000,
                 )
@@ -267,6 +267,7 @@ elif app_mode == "Data Analysis":
     page_data_analysis()
 elif app_mode == "PICO Novelty Checker":
     page_pico_novelty()
+
 
 
 
